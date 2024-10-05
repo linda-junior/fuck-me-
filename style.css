@@ -1,0 +1,742 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* password page */
+#password-check{
+    /* background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/5c/dd/79/5cdd790290de1354049e47237ab426bd/5cdd790290de1354049e47237ab426bd.2.jpg); */
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/8a/9a/86/8a9a86bd3b223e34c6cc09b53c49ee3f/8a9a86bd3b223e34c6cc09b53c49ee3f.29.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: repeat; */
+    background-attachment: fixed;
+}
+#password-check .content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#password-check .content input{
+    background-color: #000000;
+    border: #7bd8ff91 solid 2px;
+    border-radius: 10px;
+    width: 25vw;
+    height: 6vh;
+    color: #cfcfcf90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7px;
+    font-size: 20px;
+}
+#password-check .content input::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+
+}
+/* password page */
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    height: max-content;
+    overflow-x: hidden;
+    color: #cfcfcf;
+    background-color: black;
+    background-image: url(images/Abstract2\ _\ ff64.jpeg);
+    background-position: center;
+    background-size: 25%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.scroll-icons{
+    width: max-content;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    position: fixed;
+    z-index: 3;
+    top: -47px;
+    left: 18vw;
+    opacity: 70%;
+}
+.s-i{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+}
+#livo{
+    background-image: url(https://static-cdn.strpst.com/panelImages/c/6/9/c69d1b7aaedf1e642b3a3267df56add6-thumb);
+    background-position: bottom;
+    background-size: cover;
+}
+#favo{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/bd/2e/7a/bd2e7a0f077405f22064e5aee5750cc2/bd2e7a0f077405f22064e5aee5750cc2.17.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#arabo{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/33/ce/30/33ce30a0c1f76a00215f42f6b7e5ea1e/33ce30a0c1f76a00215f42f6b7e5ea1e.20.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-bottom: rgba(0, 234, 255, 0.475) solid 4px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    /* display: none; ====***======*****===========*********=== */
+}
+#con-he{
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.link-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+    gap: 10px;
+    color: #cfcfcf;
+    text-decoration: none;
+}
+.header .logo img{
+    width: 20px;
+}
+.header .text{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.header .text .list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    height: 100%;
+}
+.header .text .list a{
+    text-decoration: none;
+    color: #cfcfcf;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-icon{
+    display: none;
+}
+/* .sidebar{
+    display: none;
+} */
+.live{
+    background-color: rgba(255, 0, 0, 0.114);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow:  rgba(255, 0, 0, 0.114) 0px 0px 40px 40px;
+    /* padding-top: 10vh; */
+}
+.live .title{
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.live .title img{
+    width: 300px;
+}
+.d-l-c{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.live-cards{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #009ead4f;
+    border: #cfcfcf7b solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #cfcfcf00;
+    text-decoration: none;
+    overflow: hidden;
+}
+.live-cards h3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.live-cards h3:hover{
+    color: #cfcfcf;
+    background-color: #000000b0;
+}
+#badra-abaid{
+    /* background-image: url(https://static-cdn.strpst.com/avatars/7/4/a/74a1b078575677d52c754558fc5a92db-full); */
+    background-image: url(https://camwhores4you.com/webcam-models/Stripchat/badraabaid/profile/badraabaid.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#zeina2024{
+    background-image: url(https://static-cdn.strpst.com/panelImages/c/6/9/c69d1b7aaedf1e642b3a3267df56add6-thumb);
+    background-position: bottom;
+    background-size: cover;
+}
+#xsexysgirlsx{
+    background-image: url(https://static-cdn.strpst.com/avatars/9/4/b/94b51bf4d095e7d49196955cbd620feb-full);
+    background-position: center;
+    background-size: cover;
+}
+#sweet-amaranta1{
+    background-image: url(https://mfcamhub.com/contents/videos_screenshots/123000/123402/preview.mp4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#jumanaa{
+    background-image: url(https://server5188.camshowrecordings.com/video/Stripchat/2024/03/18/Stripchat-Public.Show-f-Jumanaa-2024.03.18.015748.preview.webp);
+    background-position: bottom;
+    background-size: cover;
+}
+#holyeroticss{
+    background-image: url(https://hls.strpst.com/records/140881069/2024/6/20//58d9cb8951c76e5077edd44003672ff8fee009a3.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.fav{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 20px;
+    padding-top: 10vh;
+}
+.s-i2{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+    position: absolute;
+}
+.cards{
+    width: 25vw;
+    height: 30vh;
+    border: #cfcfcf solid 2px;
+    border-radius: 20px;
+    background-color: #0084ff10;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #00000000;
+}
+.cards h3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: 0.5s;
+}
+.cards h3:hover{
+    color: #cfcfcf;
+    background-color: #000000b0;
+}
+.arab{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 20px;
+    padding-top: 10vh;
+}
+.s-i3{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+    position: absolute;
+}
+.title-v{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* background-color: #cfcfcf; */
+    margin-bottom: 5vh;
+    padding-left: 2vw;
+}
+.title-v h1{
+    /* padding-left: 20px; */
+    border-radius: 5px;
+    border-bottom: #00bbff solid 4px;
+}
+#v1{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/bd/2e/7a/bd2e7a0f077405f22064e5aee5750cc2/bd2e7a0f077405f22064e5aee5750cc2.17.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v2{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/54/0b/13/540b1349e183badeaa10d7b05d2a5be0/540b1349e183badeaa10d7b05d2a5be0.2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v3{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/df/62/70/df6270f3f5d9e09927fb4107edd89279-2/df6270f3f5d9e09927fb4107edd89279.8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v4{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/6a/fe/7f/6afe7f440a9c5f87df4ed31c208b39b9/6afe7f440a9c5f87df4ed31c208b39b9.4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v5{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/1f/2a/f3/1f2af380681ea847c383b298b99c9137/1f2af380681ea847c383b298b99c9137.7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v6{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/ca/94/61/ca94616ff653badb3ab7ebb0619156d9-1/ca94616ff653badb3ab7ebb0619156d9.12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v7{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/f3/97/55/f397552ee18e1351ccb3158316b5718a/f397552ee18e1351ccb3158316b5718a.14.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v8{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/60/87/cf/6087cf3b80f6133dd24e0e3040024d9e/6087cf3b80f6133dd24e0e3040024d9e.17.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v9{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/2c/63/2b/2c632bae7f55759c8af4c684050acae7/2c632bae7f55759c8af4c684050acae7.6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v10{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/f7/f0/fe/f7f0fe17a276a7bd5070311e1564d5f3/f7f0fe17a276a7bd5070311e1564d5f3.14.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v11{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/52/7c/fa/527cfab502a6f0c29ae7b70b3746df3c-2/527cfab502a6f0c29ae7b70b3746df3c.11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v12{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/35/89/ff/3589ffdd6e60e43392dcd5a8245abe8f/3589ffdd6e60e43392dcd5a8245abe8f.3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v13{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/ed/35/13/ed351311da5e2d4ac039fd5454f022ac/ed351311da5e2d4ac039fd5454f022ac.18.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#v14{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v15{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v16{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v17{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v18{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v19{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v20{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v21{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v22{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v23{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v24{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v25{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v26{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v27{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v28{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v29{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#v30{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#a1{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/33/ce/30/33ce30a0c1f76a00215f42f6b7e5ea1e/33ce30a0c1f76a00215f42f6b7e5ea1e.20.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#a2{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#a3{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+#a4{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+.vid{
+    display: none;
+}
+@media( max-width: 720px ){
+    #password-check .content input{
+        width: 100vw;
+        height: 100vh;
+        z-index: 5;
+        background-color: #00000000;
+        /* margin-top: 50vh; */
+        border: #00000000 solid 2px;
+        color: #000;
+        text-align: center;
+        padding-top: 60vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    #password-check .content input::placeholder{
+        color: #b0b0b0;
+        font-weight: 600;
+        font-size: large;
+        background-color: #000000d8;
+        box-shadow: #000000d8 0px 0px 40px 40px;
+        padding: 5px;
+        /* padding-left: 10vw;
+        padding-right: 30vw; */
+    }
+    .header .text{
+        display: none;
+    }
+
+    .header{
+        z-index: 888;
+    }
+    .d-l-c{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .live-cards{
+        width: 180px;
+        height: 180px;
+        border-radius: 20%;
+    }
+    .scroll-icons{
+        height: 30vh;
+        flex-direction: column;
+        top: 50vh;
+        left:  80vw;
+        gap: 10px;
+        opacity: 100%;
+    }
+    .s-i{
+        width: 50px;
+        height: 50px;
+    }
+    .s-i2{
+        width: 50px;
+        height: 50px;
+    }
+    .s-i3{
+        width: 50px;
+        height: 50px;
+    }
+    .fav{
+        width: 100vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+    .arab{
+        width: 100vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+    .cards{
+        width: 95vw;
+    }
+    .title-v{
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #cfcfcf; */
+        margin-bottom: 5vh;
+        padding-left: 0vw;
+        padding-right: 10vw;
+    }
+    .vid{
+        display: flex;
+        position: fixed;
+        width: 120vw;
+        height: 100vh;
+        left: -20vw;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .vid video{
+        width: 100%;
+        box-shadow: #cfcfcf 0px 0px 40px 40px;
+    }
+
+    .arrow-div{
+        width: max-content;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #009dff00;
+        position: absolute;
+        top: 1.5vh;
+        z-index: 1000;
+        right: 20vw;
+        /* color: #72bbff; */
+    }
+    .arrow-div h3{
+        font-size: 15px;
+        margin-bottom: 10px;
+        animation: move-arrow-in 2s linear infinite;
+    }
+    
+    
+    .arrow {
+        position: relative;
+        /* top: 95vh;
+        left: 48.9vw; */
+        animation: move-arrow-in 4s linear infinite;
+        width: 2.5vw; 
+        height: 2.5vh;
+        background-color: #00909d00;
+    }
+    @keyframes move-arrow-in {
+        0% {
+            opacity: 0;
+            transform: translateX(-500%);
+        }
+        50% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+/* أيقونة القائمة */
+.menu-icon {
+    position: fixed;
+    top: 18px;
+    right: 10vw;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1000; /* فوق كل شيء */
+    color: rgb(255, 255, 255); /* تأكد من أن الأيقونة مرئية */
+    display: block;
+}
+
+/* الشريط الجانبي */
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: -500px;
+    background-color: #000000d3;
+    transition: right 0.4s ease;
+    /* z-index: 999; أسفل الأيقونة */
+}
+
+
+/* عناصر القائمة داخل الشريط الجانبي */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding-top: 8vh;
+}
+
+.sidebar input{
+    width: 80%;
+    height: 5vh;
+    z-index: 5;
+    background-color: #00000097;
+    border: #4e4e4e solid 3px;
+    color: #b6b6b6;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 5vh;
+    /* padding-left: 10vw;
+    padding-right: 10vw; */
+    border-radius: 10px;
+    /* background: linear-gradient(to right, rgba(255, 0, 0, 0.701),rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.707),rgba(0, 0, 0, 0.707), rgba(255, 255, 255, 0.712)); */
+    /* -webkit-background-clip: text; */
+    /* color: transparent; */
+}
+.sidebar input::placeholder{
+    color: #b0b0b0;
+    font-weight: 600;
+    font-size: large;
+    background-color: #000000d8;
+    box-shadow: #000000d8 0px 0px 40px 40px;
+    padding: 5px;
+    /* padding-left: 10vw;
+    padding-right: 30vw; */
+    width: 100%;
+    height: 100%;
+}
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+}
