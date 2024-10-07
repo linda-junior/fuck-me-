@@ -156,9 +156,9 @@ body{
 .menu-icon{
     display: none;
 }
-/* .sidebar{
+.sidebar{
     display: none;
-} */
+}
 .live{
     background-color: rgba(255, 0, 0, 0.114);
     width: 100vw;
@@ -393,32 +393,32 @@ body{
     background-size: cover;
 }
 #v14{
-    background-image: url();
+    background-image: url(https://goo.su/591jEV);
     background-position: center;
     background-size: cover;
 }
 #v15{
-    background-image: url();
+    background-image: url(https://goo.su/MkBvUz);
     background-position: center;
     background-size: cover;
 }
 #v16{
-    background-image: url();
+    background-image: url(https://goo.su/KemK8x);
     background-position: center;
     background-size: cover;
 }
 #v17{
-    background-image: url();
+    background-image: url(https://goo.su/7elH7x);
     background-position: center;
     background-size: cover;
 }
 #v18{
-    background-image: url();
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/ee/e0/7d/eee07d9f872c4e4cff468bc6eeda2266/eee07d9f872c4e4cff468bc6eeda2266.6.jpg);
     background-position: center;
     background-size: cover;
 }
 #v19{
-    background-image: url();
+    background-image: url(https://gcore-pic.xnxx-cdn.com/videos/thumbs169xnxxll/2b/fe/27/2bfe2767f80e62415894c1470c78e733/2bfe2767f80e62415894c1470c78e733.2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -483,22 +483,56 @@ body{
     background-size: cover;
 }
 #a2{
-    background-image: url();
+    background-image: url(https://sexallarab.com/contents/videos_screenshots/3000/3536/preview_720p.mp4.jpg);
     background-position: center;
     background-size: cover;
 }
 #a3{
-    background-image: url();
+    background-image: url(https://fngml.com/wp-content/uploads/2023/06/egypt135-1.jpg);
     background-position: center;
     background-size: cover;
 }
 #a4{
-    background-image: url();
+    background-image: url(https://xnxxsexarab.com/contents/videos_screenshots/1000/1764/preview_360p.mp4.jpg);
     background-position: center;
     background-size: cover;
 }
 .vid{
     display: none;
+}
+.coloro{
+    display: none;
+}
+.footer{
+    width: 100%;
+    /* height: 15vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #9b1414; */
+    flex-wrap: wrap;
+    color: #44a5ff;
+    gap: 20px;
+    padding: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.footer img{
+    width: 20px;
+}
+.deve{
+    width: 100%;
+    /* height: 15vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #9b1414; */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.gvb{
+    font-size: 17px;
 }
 @media( max-width: 720px ){
     #password-check .content input{
@@ -514,6 +548,7 @@ body{
         padding-left: 10vw;
         padding-right: 10vw;
     }
+    
     #password-check .content input::placeholder{
         color: #b0b0b0;
         font-weight: 600;
@@ -606,20 +641,24 @@ body{
         width: max-content;
         height: 5vh;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
+        
         background-color: #009dff00;
         position: absolute;
         top: 1.5vh;
         z-index: 1000;
         right: 20vw;
         /* color: #72bbff; */
+        animation: move-arrow-in 4s linear infinite;
+
     }
     .arrow-div h3{
         font-size: 15px;
-        margin-bottom: 10px;
-        animation: move-arrow-in 2s linear infinite;
+        margin-bottom: 4px;
+        margin-right: 5px;
+        /* animation: move-arrow-in 2s linear infinite; */
     }
     
     
@@ -627,7 +666,7 @@ body{
         position: relative;
         /* top: 95vh;
         left: 48.9vw; */
-        animation: move-arrow-in 4s linear infinite;
+        /* animation: move-arrow-in 4s linear infinite; */
         width: 2.5vw; 
         height: 2.5vh;
         background-color: #00909d00;
@@ -635,25 +674,22 @@ body{
     @keyframes move-arrow-in {
         0% {
             opacity: 0;
-            transform: translateX(-500%);
+            transform: translateX(-50%);
         }
         50% {
             opacity: 1;
             transform: translateX(0%);
         }
+        90% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+
         100% {
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateX(0%);
         }
     }
-
-
-
-
-
-
-
-
 
 
 /* أيقونة القائمة */
@@ -668,8 +704,46 @@ body{
     display: block;
 }
 
+.sidebar .inpo{
+    width: 80vw; 
+    min-height: 5.5vh;
+    box-shadow: 16px 14px 20px rgba(0, 0, 0, 0.55);
+    /* box-shadow: 0px 0px 40px 40px rgba(255, 0, 0, 0.677); */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+        margin-bottom: 5vh;
+
+}
+.sidebar .inpo::before {
+    content: "";
+    background-image: conic-gradient(#00aaff, rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    width: 100vw; 
+    height: 100vh;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+
 /* الشريط الجانبي */
 .sidebar {
+    display: block;
     position: fixed;
     top: 0;
     width: 100%;
@@ -679,7 +753,6 @@ body{
     transition: right 0.4s ease;
     /* z-index: 999; أسفل الأيقونة */
 }
-
 
 /* عناصر القائمة داخل الشريط الجانبي */
 .sidebar ul {
@@ -694,24 +767,28 @@ body{
     flex-wrap: wrap;
     padding-top: 8vh;
 }
-
 .sidebar input{
-    width: 80%;
+    width: 98%;
     height: 5vh;
-    z-index: 5;
-    background-color: #00000097;
+    z-index: 91;
+    background-color: #000000;
     border: #4e4e4e solid 3px;
+    border-bottom: none;
     color: #b6b6b6;
     text-align: center;
     font-weight: 600;
     font-size: large;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
     /* padding-left: 10vw;
     padding-right: 10vw; */
     border-radius: 10px;
     /* background: linear-gradient(to right, rgba(255, 0, 0, 0.701),rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.707),rgba(0, 0, 0, 0.707), rgba(255, 255, 255, 0.712)); */
     /* -webkit-background-clip: text; */
     /* color: transparent; */
+}
+.sidebar input:focus {
+    outline: none;
+    border: none; /* في حال كنت تريد إزالة الـ border العادي */
 }
 .sidebar input::placeholder{
     color: #b0b0b0;
@@ -738,5 +815,9 @@ body{
 
 .sidebar ul li a:hover {
     background-color: #555;
+}
+.coloro{
+    display: block;
+    color: #ff0000;
 }
 }
