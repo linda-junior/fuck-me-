@@ -18,6 +18,7 @@ html{
     background-size: cover;
     /* background-repeat: repeat; */
     background-attachment: fixed;
+    z-index: 999;
 }
 #password-check .content{
     width: 100vw;
@@ -26,6 +27,7 @@ html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 999;
 }
 #password-check .content input{
     background-color: #000000;
@@ -49,11 +51,12 @@ html{
 body{
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: max-content;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow: hidden;
     color: #cfcfcf;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
     background-image: url(images/Abstract2\ _\ ff64.jpeg);
     background-position: center;
     background-size: 25%;
@@ -423,17 +426,17 @@ body{
     background-size: cover;
 }
 #v20{
-    background-image: url();
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/d1/cb/f1/d1cbf19b469f785303593073b7be9d22/d1cbf19b469f785303593073b7be9d22.5.jpg);
     background-position: center;
     background-size: cover;
 }
 #v21{
-    background-image: url();
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/6f/91/f8/6f91f8372d9dfa3a8d21fccd56eabaf3-1/6f91f8372d9dfa3a8d21fccd56eabaf3.26.jpg);
     background-position: center;
     background-size: cover;
 }
 #v22{
-    background-image: url();
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxll/9e/1d/1d/9e1d1df0b8a4ed1e40cf17546c2f98e9/9e1d1df0b8a4ed1e40cf17546c2f98e9.25.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -559,12 +562,11 @@ body{
         /* padding-left: 10vw;
         padding-right: 30vw; */
     }
+    /* body .vid video{
+        z-index: 0;
+    } */
     .header .text{
         display: none;
-    }
-
-    .header{
-        z-index: 888;
     }
     .d-l-c{
         width: 100%;
@@ -636,6 +638,12 @@ body{
         width: 100%;
         box-shadow: #cfcfcf 0px 0px 40px 40px;
     }
+    /* .mp-home{
+        z-index: 5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    } */
 
     .arrow-div{
         width: max-content;
@@ -646,9 +654,9 @@ body{
         justify-content: center;
         
         background-color: #009dff00;
-        position: absolute;
+        position: fixed;
         top: 1.5vh;
-        z-index: 1000;
+        z-index: 1001;
         right: 20vw;
         /* color: #72bbff; */
         animation: move-arrow-in 4s linear infinite;

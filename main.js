@@ -46,20 +46,182 @@ document.getElementById('password').addEventListener('keydown', function(event) 
 
 
 
+// // الحصول على الأيقونة والشريط الجانبي
+// const menuIcon = document.getElementById('menuIcon');
+// const sidebar = document.getElementById('sidebar');
+
+// // إضافة حدث للنقر على الأيقونة
+// menuIcon.addEventListener('click', function() {
+//     // التبديل بين حالة إظهار الشريط الجانبي وإخفائه
+//     if (sidebar.style.right === '-100%' || sidebar.style.right === '') {
+//         sidebar.style.right = '0'; // إظهار الشريط الجانبي
+//         sidebar.style.transition = 'right 0.4s ease';
+
+//         // sidebar.style.display = 'block'; // تأكد من استخدام علامات الاقتباس
+//     } else {
+//         sidebar.style.right = '-100%'; // إخفاء الشريط الجانبي
+//     }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // const sidebar = document.getElementById('sidebar');
+// let startX = 0;
+// let currentX = 0;
+// let isDragging = false;
+// let isSidebarOpen = false; // حالة السايد بار (مفتوح أو مغلق)
+
+// // عندما يبدأ اللمس
+// document.addEventListener('touchstart', (e) => {
+//     startX = e.touches[0].clientX;
+//     isDragging = true;
+// });
+
+// // عندما يتم تحريك اللمس
+// document.addEventListener('touchmove', (e) => {
+//     if (isDragging) {
+//         currentX = e.touches[0].clientX;
+
+//         // حساب الفرق بين الموقع الحالي وموقع البداية
+//         const deltaX = currentX - startX;
+
+//         if (!isSidebarOpen) {
+//             // إذا كان السايد بار مغلقًا وسُحب إلى اليمين لفتحه
+//             if (deltaX > 0) {
+//                 sidebar.style.left = Math.min(deltaX - 500, 0) + 'px';
+//             }
+//         } else {
+//             // إذا كان السايد بار مفتوحًا وسُحب إلى اليسار لإغلاقه
+//             if (deltaX < 0) {
+//                 sidebar.style.left = Math.max(deltaX, -500) + 'px';
+//             }
+//         }
+//     }
+// });
+
+// // عندما ينتهي اللمس
+// document.addEventListener('touchend', () => {
+//     isDragging = false;
+
+//     // إذا كان الفرق كبيرًا كفاية لفتح أو إغلاق السايد بار
+//     if (!isSidebarOpen && currentX - startX > 100) {
+//         sidebar.style.left = '0'; // فتح السايد بار
+//         isSidebarOpen = true;
+//     } else if (isSidebarOpen && currentX - startX < -100) {
+//         sidebar.style.left = '-500px'; // إخفاء السايد بار
+//         isSidebarOpen = false;
+//     } else {
+//         // إرجاع السايد بار إلى حالته السابقة إذا لم يكن السحب كافيًا
+//         sidebar.style.left = isSidebarOpen ? '0' : '-500px';
+//     }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // الحصول على الأيقونة والشريط الجانبي
 const menuIcon = document.getElementById('menuIcon');
 const sidebar = document.getElementById('sidebar');
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
+let isSidebarOpen = false; // حالة السايد بار (مفتوح أو مغلق)
 
 // إضافة حدث للنقر على الأيقونة
 menuIcon.addEventListener('click', function() {
-    // التبديل بين حالة إظهار الشريط الجانبي وإخفائه
-    if (sidebar.style.right === '-100%' || sidebar.style.right === '') {
+    if (isSidebarOpen) {
+        sidebar.style.right = '-100%'; // إخفاء الشريط الجانبي
+        isSidebarOpen = false;
+    } else {
         sidebar.style.right = '0'; // إظهار الشريط الجانبي
         sidebar.style.transition = 'right 0.4s ease';
-
-        // sidebar.style.display = 'block'; // تأكد من استخدام علامات الاقتباس
-    } else {
-        sidebar.style.right = '-100%'; // إخفاء الشريط الجانبي
+        isSidebarOpen = true;
     }
 });
 
+// عندما يبدأ اللمس
+document.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+    currentX = startX; // إعادة ضبط currentX عند بداية اللمس
+});
+
+// عندما يتم تحريك اللمس
+document.addEventListener('touchmove', (e) => {
+    if (isDragging) {
+        currentX = e.touches[0].clientX;
+
+        // حساب الفرق بين الموقع الحالي وموقع البداية
+        const deltaX = startX - currentX; // تعديل لاتجاه السحب (لليمين أو اليسار)
+
+        if (!isSidebarOpen) {
+            // إذا كان السايد بار مغلقًا وسُحب إلى اليسار لفتحه
+            if (deltaX < 0) {
+                sidebar.style.right = Math.min(-deltaX, 500) + 'px';
+            }
+        } else {
+            // إذا كان السايد بار مفتوحًا وسُحب إلى اليمين لإغلاقه
+            if (deltaX > 0) {
+                sidebar.style.right = Math.max(-deltaX, -500) + 'px';
+            }
+        }
+    }
+});
+
+// عندما ينتهي اللمس
+document.addEventListener('touchend', () => {
+    isDragging = false;
+
+    // إذا كان الفرق كبيرًا كفاية لفتح أو إغلاق السايد بار
+    if (!isSidebarOpen && startX - currentX > 100) {
+        sidebar.style.right = '0'; // فتح السايد بار
+        isSidebarOpen = true;
+    } else if (isSidebarOpen && startX - currentX < -100) {
+        sidebar.style.right = '-100%'; // إخفاء السايد بار
+        isSidebarOpen = false;
+    } else {
+        // إرجاع السايد بار إلى حالته السابقة إذا لم يكن السحب كافيًا
+        sidebar.style.right = isSidebarOpen ? '0' : '-100%';
+    }
+});
