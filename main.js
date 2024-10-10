@@ -1,4 +1,8 @@
 
+    console.log("Welcome to ( X fuck me ) Site 🔒⛓️‍💥")
+
+
+
 const correctPassword = "porn";  // كلمة المرور الصحيحة
 
 function checkPassword() {
@@ -18,10 +22,19 @@ function checkPassword() {
         document.getElementById('password').blur(); // فقدان التركيز لإخفاء لوحة المفاتيح
         
         // إخفاء السايدبار
-        sidebar.style.right = '-100%';
+        sidebar.style.right = '-100%';   
+        isSidebarOpen = false; // تحديث حالة السايد بار
+
+        // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️  المشكله انها بتذهب الي اليمين وهي فعليا مفتوحه وانا لم اغلقها شخصيا
+        // فعند السحب من اي مكان في الشاشه ستعود لانها اساسا غير مغلقه
+
+
         sidebar.style.transition = 'right 3s ease';
         
         errorMsg.style.display = 'none';
+
+        console.log(" X fuck me Site is Open ⛓️‍💥 ")
+
     } else {
         errorMsg.style.display = 'block';
         
@@ -132,6 +145,9 @@ document.getElementById('password').addEventListener('keydown', function(event) 
 
 
 // الحصول على الأيقونة والشريط الجانبي
+
+
+
 const menuIcon = document.getElementById('menuIcon');
 const sidebar = document.getElementById('sidebar');
 let startX = 0;
@@ -146,7 +162,7 @@ menuIcon.addEventListener('click', function() {
         isSidebarOpen = false;
     } else {
         sidebar.style.right = '0'; // إظهار الشريط الجانبي
-        sidebar.style.transition = 'right 0.4s ease';
+        sidebar.style.transition = 'right 0.3s ease';
         isSidebarOpen = true;
     }
 });
@@ -155,13 +171,16 @@ menuIcon.addEventListener('click', function() {
 document.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     // إذا كان السايدبار مغلقًا، تأكد من أن السحب بدأ من مسافة أقل من 10vw
-    if (!isSidebarOpen && startX >= window.innerWidth - (window.innerWidth * 0.1)) {
+    if (!isSidebarOpen && startX >= window.innerWidth - (window.innerWidth * 0.2)) {
         isDragging = true;
         currentX = startX; // إعادة ضبط currentX عند بداية اللمس
-    } else if (isSidebarOpen) {
+        console.log("sidepar is open")
+    }
+    else if (isSidebarOpen) {
         // إذا كان السايد بار مفتوحًا، يمكن بدء السحب من أي مكان
         isDragging = true;
         currentX = startX;
+        console.log("sidepar is closed")
     }
 });
 
@@ -205,5 +224,4 @@ document.addEventListener('touchend', () => {
         }
     }
 });
-
 
