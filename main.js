@@ -4,32 +4,33 @@ const correctPassword = "porn";  // كلمة المرور الصحيحة
 function checkPassword() {
     const inputPassword = document.getElementById('password').value;
     const errorMsg = document.getElementById('error-msg');
+    
     if (inputPassword === correctPassword) {
         // إخفاء شاشة التحقق وعرض الصفحة الرئيسية
         document.getElementById('password-check').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
-        document.getElementById('body').style.overflow = 'auto'
-         // تغيير النص في الـ placeholder إلى "مفتوح"
-        document.getElementById('password').placeholder ="Welcome to this website";
-          // مسح أي حرف موجود في حقل الإدخال حتى يظهر الـ placeholder
-          document.getElementById('password').value = "";  // مسح النص الموجود
-            
-          sidebar.style.right = '-100%'; // إخفاء الشريط الجانبي
+        document.getElementById('body').style.overflow = 'auto';
+
+        // تغيير النص في الـ placeholder إلى "مفتوح"
+        document.getElementById('password').placeholder = "Welcome to this website";
+        
+        // مسح أي حرف موجود في حقل الإدخال حتى يظهر الـ placeholder
+        document.getElementById('password').value = "";  // مسح النص الموجود
+
+        // إخفاء لوحة المفاتيح
+        document.getElementById('password').blur(); // فقدان التركيز لإخفاء لوحة المفاتيح
+
+        // إخفاء السايدبار
+        sidebar.style.right = '-100%';
         sidebar.style.transition = 'right 3s ease';
         
         errorMsg.style.display = 'none';
-    }
-        else {
+    } else {
         // عرض رسالة خطأ إذا كانت كلمة المرور غير صحيحة
         errorMsg.style.display = 'block';
-
-        document.getElementById('password').placeholder ="Password is wrong, try again";
+        
+        document.getElementById('password').placeholder = "Password is wrong, try again";
         document.getElementById('password').value = "";  // مسح النص الموجود
-
-        // setTimeout(function() {
-        //     window.location.href = 'index.html'; // Replace with your desired URL
-        // }, 1000); // Delay of 2 seconds before redirection
-
     }
 }
 
@@ -39,7 +40,6 @@ document.getElementById('password').addEventListener('keydown', function(event) 
         checkPassword();
     }
 });
-
 
 
 
